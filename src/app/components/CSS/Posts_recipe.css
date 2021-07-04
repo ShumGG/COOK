@@ -1,0 +1,134 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.textarea_ {
+    white-space: pre-line;
+    outline-color: black;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper form {
+    max-width: 49%;
+    position: relative;
+}
+
+.preview_body {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: auto;
+    word-break: break-all;
+    position: relative;
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.file_button {
+    width: 120px;
+    background-color: rgba(156, 223, 108, 0.75);
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.file_button:hover {
+    background-color: rgba(156, 223, 108, 1);
+    cursor: pointer;
+}
+
+.body_image {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 15%;
+}
+
+.body_image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15%;
+}
+
+.tags_wrapper {
+    display: flex;
+    min-height: 10vh;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tags_container {
+    flex-wrap: wrap;
+    display: flex; 
+    border: 1px solid black;
+    min-height: 10vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    width: 100vw;
+    padding: 5px;
+    border-radius: 1%;
+}
+
+.tags_container p {
+    color: #8e8e8e;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tags_container input {
+    background-color: transparent;
+}
+
+.tag_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(156, 223, 108, 0.75);
+    margin: 5px;
+    border-radius: 8%;
+}
+
+.tag_background p {
+    color: black;
+}
+
+.tag_background button {
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    font-weight: bold;
+}
+
+.tag_background p {
+    margin-left: 10px;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.post_button {
+    margin-bottom: 10px;
+    background-color: rgba(156, 223, 108, 0.75);
+    border-color: rgba(156, 223, 108, 0.75);
+    font-weight: bolder;
+}
+
+.post_button:hover {
+    background-color: rgba(156, 223, 108, 1);
+    border-color: rgba(156, 223, 108, 1);
+}

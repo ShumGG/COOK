@@ -1,0 +1,269 @@
+.mini_container {
+    background-color: #88D453;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    bottom: 0;
+    position: fixed;
+    left: 85%;
+    margin-bottom: 25px;
+}
+
+.mini_container:hover {
+    background-color: #7abe49;
+}
+
+.number_chats_container {
+    display: inline-block;
+    position: absolute; 
+    margin-left: 55px;
+    margin-top: -10px;
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 15px 15px 15px 15px;
+    padding: 3px 5px;
+}
+
+.number_chats_container p {
+    margin: 0;
+    padding: 0;
+}
+
+.message_icon {
+    position: relative;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.message_icon button {
+    background-color: transparent;
+    border: 0;
+}
+
+.message_icon button:focus {
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.message_icon button:hover {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none !important;
+}
+
+.message_icon span {
+    color: white;
+    font-size: 30px;
+}
+
+.float_chat_container {
+    width: 350px; 
+    height: 450px;
+    position: absolute;
+    right: 70px;
+    margin-top: -60vh;
+}
+
+.left_ {
+    background-color: white;
+    height: 450px;
+    overflow-y: auto;
+    justify-content: center;
+}
+
+.image_wrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image_wrap_mini_chat {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.image_wrap_mini_chat img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image_wrap_mini_chat_2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.image_wrap_mini_chat_2 img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image_wrap_mini_chat img:hover {
+    cursor: pointer;
+    transition: .3s all 1ms;
+}
+
+.image_wrap_mini_chat_2 img:hover {
+    cursor: pointer;
+    transition: .3s all 1ms;
+}
+
+.chat_name_container {
+    overflow: hidden;
+    display: flex; 
+    display: inline-block;
+    direction: rtl;
+    text-align: left;
+    width: auto;
+}
+
+.chat_name {
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    direction: rtl;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    padding-left: -25px;
+    margin-right: 25px;
+    border-radius: 100;
+    padding: 10px;
+    background-color: rgba(156, 223, 108);
+    z-index: 1;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.chat_name p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.right_ {
+    background-color: rgba(156, 223, 108);
+    height: 450px;
+    position: relative;
+}
+
+.message_container_mini {
+    width: 100%;
+    background-color: rgba(156, 223, 108, 0.75);
+    height: 85%;
+    overflow-y: auto;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container_number_message_mini {
+    display: flex;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.number_message_mini {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -22px;
+    background-color: rgb(130, 224, 63);
+    padding: 5px 5px;
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 1;
+}
+
+.number_message_mini p {
+    margin: 0;
+    padding: 0;
+}
+
+.message_send_mini {
+    justify-content: right;
+    text-align: right;
+}
+
+.message_send_mini p {
+    display: inline-block;
+    background-color: #7dc747;
+    border-radius: 10px;
+    max-width: 50%;
+    text-align: left;
+    padding: 5px;
+}
+
+.message_recive_mini p {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 50%;
+    text-align: left;
+    padding: 5px;
+}
+
+.text_area {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 15%;
+    background-color: rgba(156, 223, 108, 0.75);
+}
+
+.text_area textarea {
+    resize: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(156, 223, 108, 0.75);
+    outline: none;
+    border: 1px solid rgba(111, 177, 64);
+}
+
+.typing_mini p {
+    display: inline-block;
+    background-color: silver;
+    border-radius: 5%;
+    max-width: 50%;
+    text-align: left;
+    padding: 5px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.select_chat_mini {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -70px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.select_chat_mini p {
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    align-self: center;
+    justify-content: center;
+}

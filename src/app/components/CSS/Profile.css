@@ -1,0 +1,121 @@
+.wrapper {
+    margin: 15px;
+}
+
+.row_profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column_profile {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.profile_image {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 100%;
+}
+
+.upload_photo input {
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.user_info_container {
+    display: block;
+    padding-left: 5px;
+}
+
+.followers_following {
+    margin-top: 2px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.followers_following:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.user_info_container_2 {
+    display: block;
+    padding-left: 5px;
+}
+
+.user_info_container_2 input {
+    display: block;
+    background-color: transparent;
+    border-width: 0px;
+    outline: none;
+}
+
+.user_info_container_2 textarea {
+    display: block;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.edit_button {
+    background-color: dodgerblue;
+    border-width: 0px;
+    width: 128px;
+}
+
+.save_button {
+    background-color: dodgerblue;
+    border-width: 0px;
+    width: 85px;
+}
+
+.follow_unfollow_button {
+    background-color: dodgerblue;
+    border-width: 0px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.follow_unfollow_button p {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.follow_unfollow_button span {
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    float: right;
+}
+
+.send_message_container {
+    margin-top: 5px;
+}
+
+.send_message_button {
+    background-color: dodgerblue;
+    border-width: 0px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.send_message_button p {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.send_message_button span {
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    float: right;
+}

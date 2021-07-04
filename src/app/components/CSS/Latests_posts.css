@@ -1,0 +1,82 @@
+.container {
+    min-width: "30%";
+    text-overflow: "ellipsis";
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 25px;
+}
+
+.container_buttons {
+    position: sticky;
+    top: 0;
+    background-color: red;
+}
+
+.post_title:hover {
+    cursor: pointer;
+    display: inline;
+}
+
+.small_author {
+    display: block;
+    padding-top: 5px;
+    color: slategrey;
+}
+
+.like_comment_container span{
+    display: inline-block;
+    color: black;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.like_dislike_button {
+    padding: 5px;
+    background-color: transparent;
+    border-width: 0px;
+    border: 0;
+}
+
+.like_dislike_button:hover {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none !important;
+}
+
+.like_dislike_button:active {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    box-shadow: none !important;
+}
+
+.like_dislike_button:focus {
+    background-color: transparent;
+    border-width: 0px;
+    border-color: transparent;
+    outline: none;
+    border: 0;
+    box-shadow: none !important;
+}
+
+.like_dislike_button:visited {
+    border-width: 0px;
+    outline: none;
+    border: 0;
+    box-shadow: none !important;
+}
+
+.like_dislike_p {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    color: black;
+}
+
+.comments_p {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+}

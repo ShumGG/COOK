@@ -1,0 +1,121 @@
+.background {
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background::before {
+    content: "";
+    background: url("../images/wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -9999;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.post_container {
+    width: 85%;
+    margin: auto;   
+    height: auto;
+}
+
+.content {
+    background-color: rgba(136, 212, 83, 0.15);
+    border-radius: 1%;
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.post_image {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.post_image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content img {
+    margin: auto;
+    display: block;
+}
+
+.post_info_container {
+    margin: auto;
+    width: 70%;
+    margin-top: 10px;
+    padding: 5px;
+    height: auto;
+    border-radius: 2%;
+    margin-bottom: 2%; 
+    background-color: rgba(136, 212, 83, 0.55);
+}
+
+.post_info {
+    display: inline-block;
+}
+
+.post_info p {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    color: black;
+}
+
+.post_info span {
+    float: left;
+}
+
+.post_info button {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.post_info button:hover {
+    background-color: transparent;
+    border-width: 0px;    
+}
+
+.post_info button:focus {
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.hr {
+    border: 3px solid #75BD4B;
+    border-radius: 2px;
+    opacity: 1;
+    color: #75BD4B;
+}
+
+.post_author p {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: black;
+}

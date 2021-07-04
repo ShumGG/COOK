@@ -1,0 +1,64 @@
+.follower_info img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 100%;
+}
+
+.follower_info img:hover {
+    cursor: pointer;
+}
+
+.follower_info p {
+    margin-left: 10px;
+}
+
+.name {
+    padding: 0px; 
+    margin-left: 10px; 
+    display: inline;
+}
+
+.name:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.user {
+    padding: 0px; 
+    margin-left: 10px; 
+    display: inline;
+    color: silver;
+}
+
+.button_container {
+    width: 120px;
+    margin-left: 10px;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.button_ {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: -5px;
+}
+
+.button_inner_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_inner_container p{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.button_inner_container span{
+    display: inline;
+}
