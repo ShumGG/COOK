@@ -28,3 +28,4 @@ Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/register.png"></p>
  
+will add gif showing the post section and chat system soon :raised_hands:
