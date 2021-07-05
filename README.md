@@ -1,26 +1,20 @@
-# :notes: SHUMUSIC :notes:
+# :fork_and_knife: COOK :fork_and_knife:
 
-A simple music player made with react-native. For android devices only. 
+A small webpage where users can share their cooking recipes with others.
 
 <p align = "center"> <img width="1600" height="1000" src = "git_images/cook.png"></p>
 
 # 
 
-Fourth personal project. Hope you like it :eyes: :raised_hands:
+Fifth personal project. Built it using MERN and web-sockets.
 
 #
 
-## BASIC FUNCTIONS:
+## Index:
 
 ### 
 
-* Play :arrow_forward:
-* Pause :hand:
-* Previous song :rewind:
-* Next song :fast_forward:
-* Repeat queue :repeat:
-* Repeat song :repeat_one:
-* Shuffle :twisted_rightwards_arrows:
+<p align = "center"> <img width="800" height="700" src = "git_images/index.png"></p>
  
 ##
 
