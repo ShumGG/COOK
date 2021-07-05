@@ -18,9 +18,9 @@ Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
  
 ##
 
-### EXTRA FEATURES:
+### Login:
 
-* Lycrics :pencil:
+<p align = "center"> <img width="1000" height="500" src = "git_images/login.png"></p>
 
 ## Samples:
 
