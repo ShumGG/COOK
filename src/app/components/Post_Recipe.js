@@ -52,8 +52,21 @@ function Post_Recipe() {
                         >
                     </textarea>
                     </div>
-                    <label for = "files" className = "file_button">Upload photo</label>
-                    <input id = "files" multiple = {true}  onChange = {() => upload_images()} key = {recipe_images} type = "file" name = "recipe_images" style = {{color: "transparent", visibility: "hidden"}} accept = "image/*" ref = {(ref) => setRecipeImages(ref)}></input>
+                    <label for = "files" className = "file_button">
+                        Upload photo
+                        <span className = "material-icons" style = {{float: "left", color: "gray"}}>attach_file</span>
+                    </label>
+                    <input 
+                        id = "files" 
+                        multiple = {true} 
+                        onChange = {() => upload_images()} 
+                        key = {recipe_images} 
+                        type = "file" 
+                        name = "recipe_images" 
+                        style = {{color: "transparent", visibility: "hidden"}}
+                        accept = "image/*" 
+                        ref = {(ref) => setRecipeImages(ref)}
+                    ></input>
                     <div className = {`${(recipe != "") ? "preview_body" : null}`}>
                         {   
                         recipe.split("\n").map((text, index) => (
@@ -69,25 +82,25 @@ function Post_Recipe() {
                                     url.map((images) => {
                                         return (
                                             <>
-                                                {
-                                                    (text.includes(images))
-                                                    ? 
-                                                    <>
-                                                        <div className = "post_image">
-                                                            <img key = {images} src = {images} className = "recipe_images"></img>
-                                                        </div>
-                                                    </>
-                                                    : 
-                                                    (text.includes(""))
-                                                    ? 
-                                                    null
-                                                    :
-                                                    <>
-                                                        <div className = "post_image">
-                                                            <img key = {images} src = {images} className = "recipe_images"></img>
-                                                        </div>
-                                                    </>
-                                                }
+                                            {
+                                                (text.includes(images))
+                                                ? 
+                                                <>
+                                                    <div className = "post_image">
+                                                        <img key = {images} src = {images} className = "recipe_images"></img>
+                                                    </div>
+                                                </>
+                                                : 
+                                                (text.includes(""))
+                                                ? 
+                                                null
+                                                :
+                                                <>
+                                                    <div className = "post_image">
+                                                        <img key = {images} src = {images} className = "recipe_images"></img>
+                                                    </div>
+                                                </>
+                                            }
                                             </>
                                         )
                                     })
@@ -117,7 +130,11 @@ function Post_Recipe() {
                             <input style = {{outline: "none", height: "3vh", alignSelf: "center", borderWidth: "0px"}} type = "text" onKeyDown = {tag => add_tag(tag)} onChange = {tag => setNewTag(tag.target.value)} ref = {ref} value = {new_tag} ></input>
                         </div>
                     </div>
-                    <button type = "submit" className = "btn btn-outline-primary, btn btn-primary btn-lg, post_button">Post recipe</button>
+                    <button 
+                        type = "submit" 
+                        className = "btn btn-outline-primary, btn btn-primary btn-lg, post_button">
+                        Post recipe
+                    </button>
                 </form>
             </div>
         </div>

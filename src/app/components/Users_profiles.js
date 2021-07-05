@@ -60,8 +60,20 @@ function Users_profiles() {
                             <div className = "column_profile">
                                 {
                                     <>
-                                        <div style = {{width: "100%", marginLeft: "-100px"}}>
-                                            <button type = "button" onClick = {() => set_View(0)}>Overview Recipes</button>
+                                        <div>
+                                            <button 
+                                                type = "button" 
+                                                onClick = {() => set_View(0)}
+                                                className = "btn btn-outline-primary, btn btn-primary btn-lg, align-top, overview_post"
+                                                >
+                                                <span 
+                                                    className = "material-icons" 
+                                                    style = {{float: "right", color: "black"}}
+                                                >
+                                                    list_alt
+                                                </span>
+                                                <p>Overview Posts</p>
+                                            </button>
                                         </div>
                                         {
                                             (view === 0)

@@ -11,17 +11,27 @@ function Followers_Following(props) {
     const [followers_following, setFollowersFollowing] = useState([]);
 
     useEffect(() => {
-        console.log(props);
         show_followers_following();
     }, [props]);
 
     return (
         <>
-        <div style = {{width: "100%", marginLeft: "-100px"}}>
+        <div className = "follower_container">
         {
             (followers_following.length >= 1)
             ?
-            <> 
+            <>
+            <div className = "follower_following">
+                <p>{props.followers_following.toUpperCase()}</p>
+                <span className = "material-icons">
+                    {
+                        (props.followers_following === "followers")
+                        ? "emoji_people"
+                        : "sports_kabaddi"
+                    }
+                </span>
+            </div>
+            <div className = "follower_list">
                 {
                     followers_following.map((follower) => {
                         return (
@@ -105,6 +115,7 @@ function Followers_Following(props) {
                         )    
                     })
                 }
+            </div>
             </>
             :
             <>

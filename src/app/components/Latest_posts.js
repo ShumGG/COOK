@@ -14,7 +14,8 @@ function Latest_Posts() {
     const [followers, setFollowers] = useState([]);
     const [following, setFollowing] = useState([]);
     const [user, setUser] = useState();
-
+    const [posts, setPosts] = useState("Main Posts");
+    
     useEffect(() => {
         verify_session();
     }, []);
@@ -28,30 +29,48 @@ function Latest_Posts() {
 
     return ( 
         <>
-        <div className = "list-group, w-15, container">
-            <button type = "button" onClick = {() => get_posts()}>Main Post</button>
+        <div className = "list-group, w-15, container_buttons">
+            <button 
+                type = "button" 
+                className = "btn btn-outline-primary, btn btn-primary btn-lg, align-top, posts_buttons"
+                onClick = {() => get_posts()}
+                >
+                <span className = "material-icons" style = {{float: "left", color: "red"}}>whatshot</span>
+                <p className = "like_dislike_p">Main Posts.</p>
+            </button>
             {
-                (user) 
-                ? 
+                (user)
+                ?
                 <>
-                    <button type = "button" onClick = {() => followers_posts()}>Followers posts</button>
-                    <button type = "button" onClick = {() => following_posts()}>Following posts</button>
+                <button 
+                    type = "button" 
+                    className = "btn btn-outline-primary, btn btn-primary btn-lg, align-top, posts_buttons"
+                    onClick = {() => followers_posts()}>
+                    <span className = "material-icons" style = {{float: "left", color: "black"}}>emoji_people</span>
+                    <p className = "like_dislike_p">Followers Posts.</p>
+                </button>
+                <button 
+                    type = "button" 
+                    className = "btn btn-outline-primary, btn btn-primary btn-lg, align-top, posts_buttons"
+                    onClick = {() => following_posts()}>
+                    <span className = "material-icons" style = {{float: "left", color: "black"}}>sports_kabaddi</span>
+                    <p className = "like_dislike_p">Following Posts.</p>
+                </button>
                 </>
                 : null
             }
-        </div>
-        <div className = "list-group, w-15, container">
+          </div>
+        <div className = "list-group, w-15, container_post">
+        <p style = {{textAlign: "center", fontWeight: "bolder"}}>{posts}</p>
         {
             (latest_posts.length <= 0) ? null : latest_posts.map((post) => {
                 return (
                     <div>
-                        <div key = {post._id} className = "list-group-item , latest_posts">
+                        <div key = {post._id} className = "list-group-item , latest_posts" style = {{borderRadius: "15px 15px 15px 15px", marginBottom: "5px"}}>
                             <div class = "d-flex w-100 justify-content-between">
                                 <h5 className = "mb-1, post_title" onClick = {() => click_post(post)}>
                                     {
-                                        (post.title.length >= 40) 
-                                        ? post.title.slice(0, 30).padEnd(25, ".")
-                                        : post.title
+                                        post.title
                                     }
                                 </h5>
                                 <small>{(post.post_date) ? `Date: ${post.post_date}` : null}</small>
@@ -100,6 +119,7 @@ function Latest_Posts() {
     function get_posts() {
         axios.get("api/cook/post/latest_posts").then((response) => { 
             setLatest_Post(response.data);
+            setPosts("Main Posts.");
         }).catch(error => push({pathname: "/404", state: {error: error}}));
     }
 
@@ -126,20 +146,22 @@ function Latest_Posts() {
         const posts = [...latest_posts];
         const followers_posts = posts.filter((post) => {
             return followers.find(follower => {
-                return follower.user == post.author._id;
+                return follower.user._id == post.author._id;
             });
         });
         setLatest_Post([...followers_posts]);
-    }  
-    
+        setPosts("Followers Posts.");
+    }
+
     function following_posts() {
         const posts = [...latest_posts];
         const following_posts = posts.filter((post) => {
             return following.find(following => {
-                return following.user == post.author._id;
+                return following.user._id == post.author._id;
             });
         });
         setLatest_Post([...following_posts]);
+        setPosts("Following Posts.");
     }
     
     function click_post(post) {

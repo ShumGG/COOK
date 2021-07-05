@@ -18,19 +18,17 @@ function Overview_posts(props) {
                 ? 
                 <p> This user has no recipes to show</p>
                 : 
-                <div>
+                <div className = "list_container">
                 {   
                     props.user_posts.map((post, index, {length}) => {
                         return (
-                            <div key = {post._id} className = "list-group-item">
+                            <div key = {post._id} className = "list-group-item, overview_list">
                                 {
                                 <>
                                 <div class = "d-flex w-100 justify-content-between">
                                     <h5 className = "mb-1, post_title" onClick = {() => click_post(post)}>
                                         {
-                                            (post.title.length >= 40) 
-                                            ? post.title.slice(0, 30).padEnd(25, ".")
-                                            : post.title
+                                            post.title
                                         }
                                     </h5>
                                     <small>{(post.post_date) ? `Date: ${post.post_date}` : null}</small>

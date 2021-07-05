@@ -1,4 +1,22 @@
 .overview_container {
     width: 100%;
     margin-left: -100px;
+    text-overflow: ellipsis;
+}
+
+.list_container {
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 10px;
+    background-color: rgb(136, 212, 83, 0.75);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.overview_list {
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
+    margin-bottom: 8px;
 }

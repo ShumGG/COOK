@@ -11,6 +11,9 @@
     outline-color: black;
     resize: none;
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 .wrapper form {
@@ -28,14 +31,15 @@
     text-align: justify;
     margin-bottom: 5px;
     margin-top: 5px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .file_button {
-    width: 120px;
-    background-color: rgba(156, 223, 108, 0.75);
+    display: inline-block;
+    background-color: rgba(156, 223, 108);
     text-align: center;
-    color: white;
-    border-radius: 5%;
+    font-weight: bolder;
+    border-radius: 15px 15px 15px 15px;
     padding: 5px;
     font-weight: bolder;
 }
@@ -79,7 +83,7 @@
     align-items: center;
     width: 100vw;
     padding: 5px;
-    border-radius: 1%;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .tags_container p {
@@ -96,7 +100,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     background-color: rgba(156, 223, 108, 0.75);
     margin: 5px;
     border-radius: 8%;
@@ -123,12 +126,27 @@
 
 .post_button {
     margin-bottom: 10px;
-    background-color: rgba(156, 223, 108, 0.75);
+    background-color: rgba(156, 223, 108, 1);
     border-color: rgba(156, 223, 108, 0.75);
     font-weight: bolder;
+    color: black;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.post_button:focus {
+    background-color: rgba(156, 223, 108, 1);
+    box-shadow: none !important;
+    box-shadow: none !important;
+    font-weight: bolder;
+    color: black;
+    border-color: rgba(156, 223, 108, 0.75);
 }
 
 .post_button:hover {
     background-color: rgba(156, 223, 108, 1);
-    border-color: rgba(156, 223, 108, 1);
+    box-shadow: none !important;
+    font-weight: bolder;
+    color: black;
+    border-color: rgba(156, 223, 108, 0.75);
+ 
 }

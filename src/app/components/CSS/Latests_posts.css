@@ -6,10 +6,34 @@
     margin-top: 25px;
 }
 
+.container_post {
+    min-width: "30%";
+    text-overflow: "ellipsis";
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 25px;
+    border-radius: 15px 15px 15px 15px;
+}
+
 .container_buttons {
     position: sticky;
     top: 0;
-    background-color: red;
+    min-width: "30%";
+    text-overflow: "ellipsis";
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 25px;
+    display: inline-block;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+}
+
+.post_title {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .post_title:hover {
@@ -79,4 +103,27 @@
     margin: 0px;
     padding: 0px;
     margin-left: 5px;
+}
+
+.latestes_posts {
+    
+    border-radius: 15px 15px 15px 15px;
+}
+
+.posts_buttons {
+    display: inline-block;
+    padding: 5px;
+    background-color: #88D453;;
+    border-width: 0px;
+    border: 0;
+    font-weight: bolder;
+}
+
+.posts_buttons:hover {
+    background-color: #88D453;
+}
+
+.posts_buttons:focus {
+    background-color: #88D453;
+    box-shadow: none !important;
 }

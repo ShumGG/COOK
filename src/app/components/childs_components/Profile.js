@@ -34,7 +34,7 @@ function Profile(props) {
     return (   
         <>
             <div style = {{margin: "auto"}}>
-                <div className = "image_container">
+                <div className = "image_container" style = {{marginTop: "5px"}}>
                     {
                         (profile_pic === null)
                         ?
@@ -49,27 +49,52 @@ function Profile(props) {
                         ?
                         <>
                             <form onSubmit = {upload_profile_pic} encType = "multipart/form-data" className = "upload_photo">
-                                <input onChange = {() => setSelectProfilePic(true)} key = {file} type = "file" name = "profile_pic" style = {{color: "transparent"}} accept = "image/*" ref = {(ref) => setFile(ref)}></input>
+                                <input 
+                                    id = "profile_pic"
+                                    onChange = {() => setSelectProfilePic(true)}
+                                    key = {file}
+                                    type = "file" 
+                                    name = "profile_pic" 
+                                    style = {{color: "transparent", visibility: "hidden"}} 
+                                    accept = "image/*" 
+                                    ref = {(ref) => setFile(ref)}>
+                                </input>
                                 {
                                     (select_profile_pic) 
                                     ? <button type = "submit" style = {{width: "100px"}}>Upload photo</button>
                                     : null
                                 }
                             </form>
-                            <div className = "followers_following">
-                                <span className = "followers_span" onClick = {() => props.setView(1, "followers")}>Followers {followers.length}</span>
+                            <div>
+                                <label for = "profile_pic" className = "profile_pic_label">
+                                    Upload photo
+                                    <span class="material-icons" style = {{float: "right", color: "black"}}>
+                                        upload
+                                    </span>
+                                </label>
                             </div>
                             <div className = "followers_following">
-                                <span className = "following_span" onClick = {() => props.setView(1, "following")}>Following {following.length}</span>
+                                <span className = "followers_span" onClick = {() => props.setView(1, "followers")}>
+                                    Followers {followers.length}
+                                </span>
+                            </div>
+                            <div className = "followers_following">
+                                <span className = "following_span" onClick = {() => props.setView(1, "following")}>
+                                    Following {following.length}
+                                </span>
                             </div>
                         </>
                         : 
                         <>
                             <div className = "followers_following">
-                                <span className = "followers_span" onClick = {() => props.setView(1, "followers")}>Followers {followers.length}</span>
+                                <span className = "followers_span" onClick = {() => props.setView(1, "followers")}>
+                                    Followers {followers.length}
+                                </span>
                             </div>
                             <div className = "followers_following">
-                                <span className = "following_span" onClick = {() => props.setView(1, "following")}>Following {following.length}</span>
+                                <span className = "following_span" onClick = {() => props.setView(1, "following")}>
+                                    Following {following.length}
+                                </span>
                             </div>
                         </>
                     }
@@ -86,7 +111,8 @@ function Profile(props) {
                             (props.user_info === null && !login_user)
                             ?
                             <textarea 
-                                value = {(status === "No status" ? "" : status)} placeholder = {(status === "No status") ? status : null}
+                                value = {(status === "No status" ? "" : status)}
+                                placeholder = {(status === "No status") ? status : null}
                                 onChange = {text => setStatus(text.target.value)}
                                 readOnly = {!edit} 
                             ></textarea>

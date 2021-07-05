@@ -16,6 +16,46 @@
     flex: 1;
 }
 
+.overview_post {
+    display: inline-block;
+    margin-left: -100px;
+    justify-content: space-around;
+    color: black;
+    font-weight: bolder;
+    justify-content: space-around;
+    background-color: #88D453;;
+    padding: 5px;
+    border: 0px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.overview_post p {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overview_post:focus {
+    background-color: #88D453;;
+    box-shadow: none !important;
+}
+
+.profile_pic_label {
+    display: inline-block;
+    background-color: #88D453;;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.profile_pic_label:hover {
+    cursor: pointer;
+    background-color: #88D453;
+}
+
 .profile_image {
     width: 250px;
     height: 250px;
@@ -40,7 +80,7 @@
 }
 
 .followers_following:hover {
-    color: yellow;
+    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -65,19 +105,33 @@
 }
 
 .edit_button {
-    background-color: dodgerblue;
+    display: inline-block;
+    background-color: #88D453;;
     border-width: 0px;
-    width: 128px;
+    color: black;
+    font-weight: bolder;
+}
+
+.edit_button:focus {
+    background-color: #88D453;;
+    box-shadow: none !important;
 }
 
 .save_button {
-    background-color: dodgerblue;
+    background-color: #88D453;;
     border-width: 0px;
-    width: 85px;
+    display: inline-block;
+    color: black;
+    font-weight: bolder;
+}
+
+.save_button:focus {
+    background-color: #88D453;;
+    box-shadow: none !important;
 }
 
 .follow_unfollow_button {
-    background-color: dodgerblue;
+    background-color: #88D453;;
     border-width: 0px;
     display: inline-block;
     padding: 5px;
@@ -101,10 +155,12 @@
 }
 
 .send_message_button {
-    background-color: dodgerblue;
+    background-color: #88D453;;
     border-width: 0px;
     display: inline-block;
     padding: 5px;
+    color: black;
+    font-weight: bolder;
 }
 
 .send_message_button p {
