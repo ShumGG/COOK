@@ -2,7 +2,7 @@
 
 A simple music player made with react-native. For android devices only. 
 
-<p align = "center"> <img width="1698" height="1131" src = "git_images/cook.png"></p>
+<p align = "center"> <img width="1600" height="1000" src = "git_images/cook.png"></p>
 
 # 
 
