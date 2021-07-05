@@ -6,7 +6,7 @@ A small webpage where users can share their cooking recipes with others.
 
 # 
 
-Fifth personal project. Built it using MERN and web-sockets.
+Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
 
 #
 
