@@ -162,10 +162,10 @@ function Profile(props) {
                                 className = "btn btn-outline-primary, btn btn-primary btn-sm, edit_button"
                                 onClick = {edit_profile}
                             >
-                                <span class = "material-icons" style = {{float: "right"}}>
+                                <span class = "material-icons" style = {{float: "right", color: "black"}}>
                                     person_pin
                                 </span>
-                                <p style = {{margin: "0px", padding: "0px", display: "inline-block"}}>Edit profile</p>
+                                <p style = {{margin: "0px", padding: "0px", display: "inline-block", color: "black"}}>Edit profile</p>
                             </button>
                         :
                         (login_user && user_info)

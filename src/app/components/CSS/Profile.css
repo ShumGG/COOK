@@ -36,6 +36,12 @@
     padding: 0px;
 }
 
+.overview_post:hover {
+    background-color: #88D453;
+    color: black;
+    font-weight: bolder;
+}
+
 .overview_post:focus {
     background-color: #88D453;;
     box-shadow: none !important;
@@ -112,15 +118,33 @@
     font-weight: bolder;
 }
 
+.edit_button:hover {
+    background-color: #88D453;
+    color: black;
+    font-weight: bolder;
+}
+
 .edit_button:focus {
     background-color: #88D453;;
     box-shadow: none !important;
+}
+
+.edit_button:active {
+    background-color: #88D453;
+    color: black;
+    font-weight: bolder;
 }
 
 .save_button {
     background-color: #88D453;;
     border-width: 0px;
     display: inline-block;
+    color: black;
+    font-weight: bolder;
+}
+
+.save_button:hover {
+    background-color: #88D453;
     color: black;
     font-weight: bolder;
 }
