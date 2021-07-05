@@ -22,13 +22,9 @@ Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/login.png"></p>
 
-## Samples:
+## Register:
 
 ###
- <table>
-   <tr>
-     <td><img src = "gitimg/home.jpg" width = 230 height = 500 aling = "left"></td>
-     <td aling = "center"><img src = "gitimg/track_zone.jpg" width = 230 height = 500 aling = "center"></td>
-     <td aling = "right"><img src = "gitimg/video.gif" width = 230 height = 500 aling = "right"></td>
-   </tr>
- </table>
+
+<p align = "center"> <img width="1000" height="500" src = "git_images/register.png"></p>
+ 
