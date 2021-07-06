@@ -40,7 +40,7 @@ While the user is writing the recipe, a preview is displayed below.
 
 ## Notifications:
 
-The user will recive notifications, these are:
+The user will recive notifications (offline - online) , these are:
 
  <h5> Like post. </h5>
  <h5> Comment on post. </h5>
@@ -53,7 +53,7 @@ The user will recive notifications, these are:
 
 ## Chat and Mini chat:
 
-Users will be able to talk with others, using the main chat or the mini chat while browsing.
+Users will be able to talk with others, using the main chat or the mini chat while browsing, if the user is offline and recive a message once hes logged he will get a notification.
 
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/Chat.gif"></p>
@@ -72,4 +72,3 @@ Users can let a comment on their favorites posts.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/Comment.gif"></p>
 
-will add gif showing the post section and chat system soon :raised_hands:
