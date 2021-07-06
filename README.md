@@ -42,10 +42,10 @@ While the user is writing the recipe, a preview is displayed below.
 
 The user will recive notifications, these are:
 
- :point_right: <h5> Like post. </h5>
- :point_right: <h5> Comment on post. </h5>
- :point_right: <h5> Like his comment on a post. </h5>
- :point_right: <h5> A new follower. </h5>
+ <h5> Like post. </h5>
+ <h5> Comment on post. </h5>
+ <h5> Like his comment on a post. </h5>
+ <h5> A new follower. </h5>
  
 <p align = "center"> <img width="1000" height="500" src = "git_images/Notification.gif"></p>
 
