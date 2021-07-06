@@ -30,7 +30,9 @@ Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
 
 ###
 
-## Post
+## Post:
+
+While the user is writing the recipe, a preview is displayed below.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/Post.gif"></p>
 
