@@ -46,8 +46,9 @@ The user will recive notifications, these are:
  <li>Like post.</li>
  <li>Comment on post.</li>
  <li>Like his comment on a post.</li>
+ <li>A new follower.</li>
  </>
- 
+ <br></br>
 <p align = "center"> <img width="1000" height="500" src = "git_images/Notification.gif"></p>
 
 will add gif showing the post section and chat system soon :raised_hands:
