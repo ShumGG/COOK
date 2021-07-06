@@ -42,7 +42,7 @@ While the user is writing the recipe, a preview is displayed below.
 
 The user will recive notifications, these are:
 
- # Like post.
+ <small> Like post. </small>
  # Comment on post.
  # Like his comment on a post.
  # A new follower.
