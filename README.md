@@ -14,7 +14,7 @@ Fifth personal project. Built it using MERN and web-sockets :electric_plug:.
 
 ### 
 
-<p align = "center"> <img width="1000" height="500" src = "git_images/index.png"></p>
+<p align = "center"> <img width="1000" height="300" src = "git_images/index.png"></p>
  
 ###
 
