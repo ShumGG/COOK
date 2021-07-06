@@ -36,4 +36,16 @@ While the user is writing the recipe, a preview is displayed below.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/Post.gif"></p>
 
+###
+
+## Notifications
+
+The user will recive notifications, these are:
+
+ <ul>
+ <li>Like post.</li>
+ <li>Comment</li>
+ <li>Like comment</li>
+ </>
+
 will add gif showing the post section and chat system soon :raised_hands:
