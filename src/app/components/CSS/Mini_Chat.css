@@ -22,11 +22,13 @@
     font-weight: bolder;
     border-radius: 15px 15px 15px 15px;
     padding: 3px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .number_chats_container p {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_icon {
@@ -145,11 +147,13 @@
     background-color: rgba(156, 223, 108);
     z-index: 1;
     border-radius: 15px 15px 15px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .chat_name p {
     margin: 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .right_ {
@@ -187,16 +191,19 @@
     font-weight: bold;
     display: inline-block;
     z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .number_message_mini p {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_send_mini {
     justify-content: right;
     text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_send_mini p {
@@ -206,6 +213,7 @@
     max-width: 50%;
     text-align: left;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_recive_mini p {
@@ -215,6 +223,7 @@
     max-width: 50%;
     text-align: left;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .text_area {
@@ -223,6 +232,7 @@
     bottom: 0;
     height: 15%;
     background-color: rgba(156, 223, 108, 0.75);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .text_area textarea {
@@ -233,6 +243,7 @@
     background-color: rgba(156, 223, 108, 0.75);
     outline: none;
     border: 1px solid rgba(111, 177, 64);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .typing_mini p {
@@ -245,6 +256,7 @@
     color: black;
     position: absolute;
     bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .select_chat_mini {
@@ -256,6 +268,7 @@
     text-align: center;
     justify-content: center;
     align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .select_chat_mini p {
@@ -266,4 +279,5 @@
     margin: -50px 0 0 -50px;
     align-self: center;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

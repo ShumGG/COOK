@@ -40,7 +40,7 @@ function Users_profiles() {
     }, [users_posts]);
 
     return (
-        <div>
+        <div className = "profile_background">
             {
                 (user_info && users_posts || login_user && users_posts) 
                 ?   

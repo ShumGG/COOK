@@ -5,7 +5,7 @@ import Profile_pic from "./prueba.jpg";
 import NotificationBar from "../NotificationBar";
 import {send_notification, socket_io} from "../../../notifications/Notification";
 import Profile_ from "../CSS/Profile.css";
-
+import Mini_Chat from "../Mini_Chat";
 
 function Profile(props) {
     
@@ -44,6 +44,7 @@ function Profile(props) {
                     }   
                 </div>
                 <div className = "user_info_container">
+                    <div style = {{marginTop: "-20px"}}>
                     {
                         (login_user && user_info === null)
                         ?
@@ -98,6 +99,7 @@ function Profile(props) {
                             </div>
                         </>
                     }
+                    </div>
                     <div className = "user_info_container_2">
                         <input 
                             ref = {input_ref} readOnly = {!edit} 
@@ -223,6 +225,12 @@ function Profile(props) {
                         </div>
                     }
                 </div>
+                {
+                    (login_user)
+                    ?
+                    <Mini_Chat user = {login_user}></Mini_Chat>
+                    : null
+                }
             </div>
         </>
     );

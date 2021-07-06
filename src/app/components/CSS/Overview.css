@@ -12,6 +12,8 @@
     padding: 10px;
     background-color: rgb(136, 212, 83, 0.75);
     border-radius: 15px 15px 15px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .overview_list {
@@ -19,4 +21,6 @@
     border-radius: 15px 15px 15px 15px;
     padding: 5px;
     margin-bottom: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }

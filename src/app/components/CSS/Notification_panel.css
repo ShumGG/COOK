@@ -13,6 +13,7 @@
 .notifications {
     display: flex;
     margin-bottom: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .notifications:hover {
@@ -41,7 +42,7 @@
     color: black;
     max-width: 45px;
     border-radius: 100%;
-    background-color: rgba(60, 179, 113);
+    background-color: #88D453;
 }
 
 .notification_icon_background span {
@@ -57,21 +58,35 @@
     max-width: 280px;
     hyphens: auto;
     margin-left: 15px;
+    margin-top: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .notification_text h5 {
     margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .notification_text small {
     color: silver;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .notification_text span {
-    float: right;
     font-size: 18px;
     color: gray;
-    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 18vw;
+}
+
+.notification_date_seen {
+    display: flex;
+    bottom: 0; 
+    position: absolute;
+    display: inline-block; 
+    justify-content: space-between;
+    margin-left: 5px;
 }
 
 .zero_notification {
@@ -80,4 +95,5 @@
     width: 100%;
     font-weight: bolder;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

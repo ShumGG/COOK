@@ -1,3 +1,9 @@
+.profile_background {
+    height: 100vh;
+    background: url("../images/wallpaper2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
 .wrapper {
     margin: 15px;
 }
@@ -34,6 +40,9 @@
     float: left;
     margin: 0px;
     padding: 0px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .overview_post:hover {
@@ -77,6 +86,10 @@
 .user_info_container {
     display: block;
     padding-left: 5px;
+    border-top: 2px solid black;
+    width: 68%;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .followers_following {
@@ -116,6 +129,7 @@
     border-width: 0px;
     color: black;
     font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .edit_button:hover {
@@ -141,6 +155,7 @@
     display: inline-block;
     color: black;
     font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .save_button:hover {
@@ -159,12 +174,14 @@
     border-width: 0px;
     display: inline-block;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .follow_unfollow_button p {
     margin: 0px;
     padding: 0px;
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .follow_unfollow_button span {
@@ -176,6 +193,7 @@
 
 .send_message_container {
     margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .send_message_button {
@@ -185,12 +203,14 @@
     padding: 5px;
     color: black;
     font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .send_message_button p {
     margin: 0px;
     padding: 0px;
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .send_message_button span {

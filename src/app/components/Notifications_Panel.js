@@ -59,16 +59,18 @@ function Notifications_panel(props) {
                                         <h5 className = "mb-1" onClick = {() => open_notification(notification)}>
                                             {`${notification.user.user + " " + notification.notification}`}
                                         </h5>
-                                        <small>{notification.date}</small>
                                         {
                                             (notification.seen)
                                             ? 
                                             null
                                             :
-                                            <span class = "material-icons">
-                                                visibility_off
-                                            </span>
+                                            <div className = "notification_date_seen">
+                                                <small>{notification.date}</small>
+                                            </div>
                                         }
+                                        <span class = "material-icons">
+                                            visibility_off
+                                        </span>
                                     </div>
                                 </div>
                             </>

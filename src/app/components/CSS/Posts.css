@@ -37,6 +37,7 @@
     color: black;
     z-index: 1;
     font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .post_image {
@@ -118,4 +119,6 @@
     margin-left: 10px;
     font-size: 18px;
     color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }

@@ -13,6 +13,7 @@
     overflow: auto;
     margin-top: 25px;
     border-radius: 15px 15px 15px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container_buttons {
@@ -27,6 +28,8 @@
     justify-content: space-between;
     display: flex;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .post_title {

@@ -19,11 +19,13 @@
 .wrapper form {
     max-width: 49%;
     position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .preview_body {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
+    width: 112%;
     height: auto;
     word-break: break-all;
     position: relative;
@@ -32,6 +34,7 @@
     margin-bottom: 5px;
     margin-top: 5px;
     border-radius: 15px 15px 15px 15px;
+    
 }
 
 .file_button {
@@ -42,6 +45,7 @@
     border-radius: 15px 15px 15px 15px;
     padding: 5px;
     font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .file_button:hover {
@@ -70,8 +74,9 @@
 .tags_wrapper {
     display: flex;
     min-height: 10vh;
-    width: 100%;
+    width: 112%;
     margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .tags_container {
@@ -103,6 +108,8 @@
     background-color: rgba(156, 223, 108, 0.75);
     margin: 5px;
     border-radius: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .tag_background p {
@@ -131,6 +138,7 @@
     font-weight: bolder;
     color: black;
     border-radius: 15px 15px 15px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .post_button:focus {

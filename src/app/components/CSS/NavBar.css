@@ -15,6 +15,8 @@
     background-color: transparent;
     border-width: 0px;
     margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .home:hover {
@@ -63,7 +65,7 @@
     width: 100px;
     background-color: transparent;
     border-width: 0px;
-    justify-content: cente
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .login_button:hover {
@@ -78,6 +80,8 @@
     width: 120px;
     background-color: transparent;
     border-width: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .register_button:hover {
@@ -207,7 +211,6 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    background-color: red;
     border-radius: 50%;
     margin-right: 15px;
 }

@@ -146,7 +146,14 @@ function Comments(props) {
                                 {
                                     (comments_length < props.comments.comments.length)
                                     ?
-                                    <button className = "btn btn-success, comment" style = {{width: "100%"}} type = "button" onClick = {() => show_more_comments()}>Show more comments.</button>
+                                    <button 
+                                        className = "btn btn-success, comment" 
+                                        style = {{width: "100%"}} 
+                                        type = "button" 
+                                        onClick = {() => show_more_comments()}
+                                    >
+                                        Show more comments.
+                                    </button>
                                     :
                                     <p className = "no_comments">No more comments.</p>
                                 }

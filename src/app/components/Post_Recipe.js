@@ -28,7 +28,7 @@ function Post_Recipe() {
         <div className = "background">
             <NotificationBar></NotificationBar>
             <div className = "wrapper">
-                <form onSubmit = {post_recipe} encType = "multipart/form-data">
+                <form onSubmit = {post_recipe} encType = "multipart/form-data" className = "form_text">
                     <div>
                         <textarea 
                             maxLength = {200} 
@@ -127,7 +127,15 @@ function Post_Recipe() {
                                     )
                                 })
                             }
-                            <input style = {{outline: "none", height: "3vh", alignSelf: "center", borderWidth: "0px"}} type = "text" onKeyDown = {tag => add_tag(tag)} onChange = {tag => setNewTag(tag.target.value)} ref = {ref} value = {new_tag} ></input>
+                            <input 
+                                style = {{outline: "none", height: "3vh", alignSelf: "center", borderWidth: "0px"}} 
+                                type = "text" 
+                                onKeyDown = {tag => add_tag(tag)} 
+                                onChange = {tag => setNewTag(tag.target.value)} 
+                                ref = {ref} 
+                                value = {new_tag}
+                            >
+                            </input>
                         </div>
                     </div>
                     <button 

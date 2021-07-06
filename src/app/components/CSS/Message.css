@@ -33,7 +33,7 @@
     object-fit: cover;
 }
 
-.message_icon_background p{
+.message_icon_background p {
     position: absolute;
     top: 70px;
     left: 75px;
@@ -50,14 +50,17 @@
     max-width: 280px;
     hyphens: auto;
     margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_text h5 {
     margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_text small {
     color: silver;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .message_text span {
