@@ -63,4 +63,13 @@ Users will be able to talk with others, using the main chat or the mini chat whi
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/MiniChat.gif"></p>
 
+###
+
+## Comment on posts: 
+
+Users can let a comment on their favorites posts.
+
+
+<p align = "center"> <img width="1000" height="500" src = "git_images/Comment.gif"></p>
+
 will add gif showing the post section and chat system soon :raised_hands:
