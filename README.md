@@ -72,3 +72,9 @@ Users can let a comment on their favorites posts.
 
 <p align = "center"> <img width="1000" height="500" src = "git_images/Comment.gif"></p>
 
+###
+
+## Extras:
+
+<h5> Follow - Unfollow. </h5>
+<h5> Option to see the posts of your followers or the people you are following.</h5>
