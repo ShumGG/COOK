@@ -42,13 +42,10 @@ While the user is writing the recipe, a preview is displayed below.
 
 The user will recive notifications, these are:
 
- <ul>
- <li>Like post.</li>
- <li>Comment on post.</li>
- <li>Like his comment on a post.</li>
- <li>A new follower.</li>
- <ul/>
- <br></br>
+ # Like post.
+ # Comment on post.
+ # Like his comment on a post.
+ # A new follower.
  
 <p align = "center"> <img width="1000" height="500" src = "git_images/Notification.gif"></p>
 
