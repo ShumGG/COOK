@@ -72,6 +72,9 @@ function Mini_Chat(props) {
         }
     }, [message]);
 
+    useEffect(() => {
+        console.log(chats);
+    }, [chats]);
 
     return (
         <> 
@@ -301,6 +304,8 @@ function Mini_Chat(props) {
             }
         }).then((response) => {
             const chats_ = response.data;
+            console.log("CHATS");
+            console.log(chats_);
             if (seen >= 1) {
                 const old_chat = [...chats];
                 const ordered_chats = chats_.chats.sort((a,b) => {
@@ -313,8 +318,8 @@ function Mini_Chat(props) {
                 setMessages(JSON.parse(chat));
             }else {
                 const chat_index = chats.findIndex((chat) => chat.user_to_talk._id === user_to_talk._id);
-                chats.unshift(chats.splice(chat_index, 1)[0]);
-                setChats(chats);
+                chats_.chats.unshift(chats_.chats.splice(chat_index, 1)[0]);
+                setChats(chats_.chats);
                 setReceiver(user_to_talk.user);
                 setSender(user.user);
                 setUserToTalk(user_to_talk._id);

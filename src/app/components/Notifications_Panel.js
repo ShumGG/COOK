@@ -64,13 +64,13 @@ function Notifications_panel(props) {
                                             ? 
                                             null
                                             :
-                                            <div className = "notification_date_seen">
-                                                <small>{notification.date}</small>
-                                            </div>
+                                            <span class = "material-icons">
+                                                visibility_off
+                                            </span>
                                         }
-                                        <span class = "material-icons">
-                                            visibility_off
-                                        </span>
+                                        <div className = "notification_date_seen">
+                                            <small>{notification.date}</small>
+                                        </div>
                                     </div>
                                 </div>
                             </>

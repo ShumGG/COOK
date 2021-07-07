@@ -178,7 +178,7 @@ function Comments(props) {
             }
         }).then((response) => {
             const {comments} = response.data;
-            const cut_comments = comments.slice(0, comments_length).reverse();
+            const cut_comments = comments.reverse().slice(0, comments_length);
             setPost(props.post);
             setPostComment(cut_comments);
         }).catch(error => push({pathname: "/404", state: {error: error}}));

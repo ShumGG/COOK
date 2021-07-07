@@ -9,8 +9,7 @@
 .container_post {
     min-width: "30%";
     text-overflow: "ellipsis";
-    max-height: 500px;
-    overflow: auto;
+    height: auto;
     margin-top: 25px;
     border-radius: 15px 15px 15px 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

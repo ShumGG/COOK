@@ -397,6 +397,7 @@ function Chat() {
     }
 
     function recive_message(message) {
+        console.log("RECIVE MESSAGE CHAT");
         const selected_user = localStorage.getItem("selected_user");
         if (message.sender === user.user) {
             return;
