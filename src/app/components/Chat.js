@@ -326,12 +326,12 @@ function Chat() {
                 chats_reference.current = [];
             }else {
                 const {chats} = response.data;
-                setChats(chats);
+                setChats(response.data);
                 setCloneChats(chats);
                 setSender(user.user);
                 setLocationState(location.state);
                 setInitChat(true);
-                chats_reference.current = chats;
+                chats_reference.current = response.data;
             }
         });
     }
@@ -353,13 +353,13 @@ function Chat() {
                 "Content-Type": "application/json"
             }
         }).then((response) => {
-            const {chats} = response.data;  
+            const chats = response.data;  
             const chat_index = chats.findIndex((chat) => chat.user_to_talk._id === first_message);
             chats.unshift(chats.splice(chat_index, 1)[0]);
             setChats(chats);
             setCloneChats(chats);
             setInitChat(true);
-            chats_reference.current = chats;
+            chats_reference.current = response.data;
         });
     }
     
@@ -397,7 +397,6 @@ function Chat() {
     }
 
     function recive_message(message) {
-        console.log("RECIVE MESSAGE CHAT");
         const selected_user = localStorage.getItem("selected_user");
         if (message.sender === user.user) {
             return;
@@ -405,6 +404,7 @@ function Chat() {
             if (selected_user === null && messages.length <= 0) {
                 if (message.receiver === user.user) {
                     const chats_ = chats_reference.current;
+                    console.log(chats_)
                     const user_chat = chats_.find((chat) => chat.user_to_talk._id === message.sender_id._id);
                     if (user_chat) {
                         const {user_to_talk, chat} = user_chat;
@@ -412,9 +412,11 @@ function Chat() {
                         const parsed_chat = JSON.parse(chat);
                         parsed_chat.push(new_message);
                         if (message.sender === selected_user) {
+                            console.log("same")
                             setMessages(old_messages => [...old_messages, new_message]);
                             save_chat("same", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }else {
+                            console.log("another")
                             save_chat("another", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }
                     }else {
@@ -427,9 +429,8 @@ function Chat() {
             }else {
                 if (message.receiver === user.user) {
                     const chats_ = chats_reference.current;
+                    console.log(chats_)
                     const user_chat = chats_.find((chat) => chat.user_to_talk.user === message.sender_id.user);
-                    console.log("USER CHAT SEGUNDO IF");
-                    console.log(user_chat);
                     if (user_chat) {
                         const {user_to_talk, chat} = user_chat;
                         const new_message = {type: "recive", message: message.message};
@@ -440,7 +441,6 @@ function Chat() {
                             setTyping(false);
                             save_chat("same", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }else {
-                            console.log("RECIVE MESSAGE SEGUNDO ELSE EJECUTADO, CHAT ENVIADO A SEND CHAT");
                             save_chat("another", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }
                     }else {

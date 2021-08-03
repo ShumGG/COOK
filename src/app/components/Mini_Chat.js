@@ -275,8 +275,7 @@ function Mini_Chat(props) {
                 localStorage.removeItem("selected_user");
                 chats_reference.current = [];
             }else {
-                const {chats} = response.data;
-                setChats(chats);
+                setChats(response.data);
                 setInitChat(true);
                 localStorage.removeItem("selected_user");
                 chats_reference.current = chats;

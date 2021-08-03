@@ -76,6 +76,9 @@
     width: 100%;
     font-weight: bolder;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    text-align: center;
 }
 
 .message_seen{

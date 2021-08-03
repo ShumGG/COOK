@@ -10,6 +10,7 @@ function Message_Panel(props) {
     const {push} = useHistory();
 
     const [messages, setMessages] = useState([]);
+    const [loadedMessages, setLoadedMessages] = useState(true)
 
     useEffect(() => {
         get_chats();
@@ -18,44 +19,50 @@ function Message_Panel(props) {
     return (
         <div className = "message_panel">
             {
-                messages.map((chat) => {
-                    return (
-                        <>
-                        <div key = {chat._id} className = "list-group-item">
-                            {
+                (messages.length >= 1) 
+                ?
+                    messages.map((chat) => {
+                        return (
                             <>
-                                <div class = "d-flex, messages" onClick = {() => open_chat(chat)}>
-                                    <div className = "img_wrap">
-                                        {
-                                            (chat.user_to_talk.profile_pic === null)
-                                            ?
-                                            <img src = {Profile_pic}
-                                            style = {{width: "85px", height: "85px", objectFit: "cover"}}/>
-                                            :
-                                            <img src = {`/images/${chat.user_to_talk.profile_pic}`}
-                                            style = {{width: "85px", height: "85px", objectFit: "cover"}}/>
-                                        }
+                            <div key = {chat._id} className = "list-group-item">
+                                {
+                                <>
+                                    <div class = "d-flex, messages" onClick = {() => open_chat(chat)}>
+                                        <div className = "img_wrap">
+                                            {
+                                                (chat.user_to_talk.profile_pic === null)
+                                                ?
+                                                <img src = {Profile_pic}
+                                                style = {{width: "85px", height: "85px", objectFit: "cover"}}/>
+                                                :
+                                                <img src = {`/images/${chat.user_to_talk.profile_pic}`}
+                                                style = {{width: "85px", height: "85px", objectFit: "cover"}}/>
+                                            }
+                                        </div>
+                                        <div className = "message_icon_background">
+                                            {
+                                                (chat.seen >= 1)
+                                                ? <p>{chat.seen}</p>
+                                                : null
+                                            }
+                                        </div>
+                                        <div className = "message_text">
+                                            <h5 className = "mb-1">
+                                                {chat.user_to_talk.user}
+                                            </h5>
+                                            <p className = {`${(chat.seen >= 1) ? "message_seen" : "message"}`}>{JSON.parse(chat.chat)[JSON.parse(chat.chat).length - 1].message}</p>
+                                        </div>
                                     </div>
-                                    <div className = "message_icon_background">
-                                        {
-                                            (chat.seen >= 1)
-                                            ? <p>{chat.seen}</p>
-                                            : null
-                                        }
-                                    </div>
-                                    <div className = "message_text">
-                                        <h5 className = "mb-1">
-                                            {chat.user_to_talk.user}
-                                        </h5>
-                                        <p className = {`${(chat.seen >= 1) ? "message_seen" : "message"}`}>{JSON.parse(chat.chat)[JSON.parse(chat.chat).length - 1].message}</p>
-                                    </div>
+                                </>
+                                }
                                 </div>
                             </>
-                            }
-                            </div>
-                        </>
-                    )
-                })
+                        )
+                    })
+                :
+                (loadedMessages)
+                ? null
+                : <div className = "zero_message"><p>You dont have any messages.</p></div>
             }
         </div>
     )
@@ -72,8 +79,12 @@ function Message_Panel(props) {
                 "Content-Type": "application/json"
             }
         }).then((response) => {
-            const {chats} = response.data;
-            setMessages(chats);
+            if (response.data.length >= 1) {
+                setLoadedMessages(true)
+                setMessages(response.data);
+             }else {
+                setLoadedMessages(false)
+            }
         }).catch(error => push({pathname: "/404", state: {error: error}}));
     }
 

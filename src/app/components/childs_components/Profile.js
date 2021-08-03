@@ -285,7 +285,7 @@ function Profile(props) {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             }
-        }).then((response) => {
+        }).then(() => {
             props.verify_session();
         }).catch(error => push({pathname: "/404", state: {error: error}}));
         setEdit(!edit);

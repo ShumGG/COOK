@@ -8,15 +8,16 @@ function Overview_posts(props) {
     
     const {push} = useHistory();
     const {path} = useRouteMatch();
-    const location = useLocation();
-    
+
     return (
         <>
         <div className = "overview_container">
             {
                 (props.user_posts.length <= 0)
-                ? 
-                <p> This user has no recipes to show</p>
+                ?
+                    (props.user_to_search)
+                    ? <p style = {{fontWeight: "bolder", textAlign: "center"}}>This user has no recipes to show.</p>
+                    : <p  style = {{fontWeight: "bolder", textAlign: "center"}}>You haven't post your first recipe yet!</p>
                 : 
                 <div className = "list_container">
                 {   

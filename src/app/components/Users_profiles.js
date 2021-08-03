@@ -81,6 +81,7 @@ function Users_profiles() {
                                             <Overview_posts 
                                                 user_posts = {users_posts} 
                                                 login_user = {login_user} 
+                                                user_to_search = {user_to_search}
                                                 get_user_posts = {get_user_posts.bind(this)}>
                                             </Overview_posts>
                                             : 

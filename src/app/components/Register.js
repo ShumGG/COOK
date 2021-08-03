@@ -48,7 +48,7 @@ function Register() {
                                     ? 
                                     <div className = "rotate">
                                         <p style = {{color: `${color}`}}>{`${email_exist}`}</p>
-                                        <span class = "material-icons">
+                                        <span class="material-icons">
                                             {`${icon}`}
                                         </span>
                                     </div>
