@@ -2,7 +2,7 @@
 
 A small webpage where users can share their cooking recipes with others.
 
-<p align = "center"> <img width="1200" height="800" src = "git_images/cook.png"></p>
+<p align = "center"> <img width="1200" height="500" src = "git_images/cook.png"></p>
 
 # 
 
