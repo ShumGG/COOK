@@ -59,6 +59,7 @@ function Mini_Chat(props) {
         }else {
             return;
         }
+        return
     }, [init_chat]);
 
     useEffect(() => {
@@ -71,10 +72,6 @@ function Mini_Chat(props) {
             }
         }
     }, [message]);
-
-    useEffect(() => {
-        console.log(chats);
-    }, [chats]);
 
     return (
         <> 
@@ -278,7 +275,7 @@ function Mini_Chat(props) {
                 setChats(response.data);
                 setInitChat(true);
                 localStorage.removeItem("selected_user");
-                chats_reference.current = chats;
+                chats_reference.current = response.data;
             }
         }).catch(error => push({pathname: "/404", state: {error: error}}));
     }   
@@ -344,15 +341,13 @@ function Mini_Chat(props) {
         }
     }   
 
-    function save_chat(type_of_save, old_messages, new_user, another_user_to_talk, first_message, seen_message) {
+    function save_chat(type_of_save, old_messages, new_user, first_message) {
         axios.post("/api/cook/users/save_chat", 
         {
             type: type_of_save,
             user: user._id,
             user_to_talk: (new_user) ? new_user: user_to_talk,
-            another_user_to_talk: another_user_to_talk,
             chat: JSON.stringify(old_messages),
-            seen_message: seen_message,
             receiver: receiver, 
             message: message, 
         }, 
