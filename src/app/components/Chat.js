@@ -49,7 +49,6 @@ function Chat() {
     useEffect(() => {
         if (init_chat && user) {
             Socket.on("recive_message", message => {
-                console.log("recive")
                 recive_message(message);
             });
             Socket.on("typing_message", message => {
@@ -412,15 +411,12 @@ function Chat() {
                         const parsed_chat = JSON.parse(chat);
                         parsed_chat.push(new_message);
                         if (message.sender === selected_user) {
-                            console.log("same")
                             setMessages(old_messages => [...old_messages, new_message]);
                             save_chat("same", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }else {
-                            console.log("another")
                             save_chat("another", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }
                     }else {
-                        console.log("new")
                         const new_message = [{type: "recive", message: message.message}];
                         save_chat("new", new_message, message.sender_id._id, message.sender_id._id);
                     }
@@ -437,18 +433,13 @@ function Chat() {
                         const parsed_chat = JSON.parse(chat);
                         parsed_chat.push(new_message);
                         if (message.sender === selected_user) {
-                            console.log("same 1")
                             setMessages(old_messages => [...old_messages, new_message]);
                             setTyping(false);
                             save_chat("same", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }else {
-                            console.log(message.sender)
-                            console.log(selected_user)
-                            console.log("another 1")
                             save_chat("another", parsed_chat, user_to_talk._id);  //all this is used for when user hasnt open any chat yet.
                         }
                     }else {
-                        console.log("new 1")
                         const new_message = [{type: "recive", message: message.message}];
                         save_chat("new", new_message, message.sender_id._id, message.sender_id._id);
                     }
